@@ -4,7 +4,7 @@ describe("Hobsons home page test cases", () => {
   beforeEach(function () {
     cy.fixture("hobsonUIConfig").then(function (data) {
       this.data = data;
-      cy.visit(this.data.hobsonURL);
+      cy.visitURL(this.data.hobsonURL);
     });
   });
 

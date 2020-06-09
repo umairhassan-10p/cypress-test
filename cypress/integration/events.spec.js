@@ -4,7 +4,7 @@ describe("Hobsons event test cases", () => {
   beforeEach(function () {
     cy.fixture("hobsonUIConfig").then(function (data) {
       this.data = data;
-      cy.visitURL(this.data.hobsonURL)
+      cy.visitURL(this.data.hobsonURL);
     });
   });
 
